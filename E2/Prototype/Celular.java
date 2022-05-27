@@ -5,11 +5,12 @@ public class Celular implements IEeclular {
     private String tamanho;
     private int peso;
     private int foco;
-    private int lente;
+    private String lente;
     private int imei;
     private String origen;
 
     public Celular(){}
+
     public String getModelo() {
         return modelo;
     }
@@ -42,11 +43,11 @@ public class Celular implements IEeclular {
         this.foco = foco;
     }
 
-    public int getLente() {
+    public String getLente() {
         return lente;
     }
 
-    public void setLente(int lente) {
+    public void setLente(String lente) {
         this.lente = lente;
     }
 
@@ -84,8 +85,7 @@ public class Celular implements IEeclular {
         System.out.println("Modelo: " + this.modelo);
         System.out.println("Tamanho: " + this.tamanho);
         System.out.println("Peso: " + this.peso);
-        System.out.println("Foco: " + this.foco);
-        System.out.println("Lente: " + this.lente);
+        System.out.println("Camara: " + "Foco: " + this.foco + "Lente: " + this.lente);
         System.out.println("IMEI: " + this.imei);
         System.out.println("Origen: " + this.origen);
     }
